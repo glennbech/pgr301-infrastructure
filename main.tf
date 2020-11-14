@@ -6,6 +6,10 @@ resource "google_cloud_run_service" "default" {
     spec {
       containers {
         image = "gcr.io/pgr301-exam-295320/app@sha256:47dd72d94febaacd2273f74abde70e88f51e0471fa4a3ac91c51a0d74055af51"
+        env {
+          name = "LOGZ_TOKEN"
+          value = "var.logz_token"
+        }
       }
     }
   }

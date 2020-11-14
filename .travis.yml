@@ -21,6 +21,7 @@ install: true
 script:
   - |-
     set -ex;
+    export TF_VAR_logz_token=$(gcloud secrets versions access latest --secret=logz_token)
     terraform init
     terraform plan
     terraform apply --auto-approve
