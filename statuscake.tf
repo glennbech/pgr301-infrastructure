@@ -4,7 +4,7 @@ provider "statuscake" {
 
 resource "statuscake_test" "pgrexam" {
   website_name = "Exam online"
-  website_url  = google_cloud_run_service.default.status[0].url
+  website_url  = google_cloud_run_service.default.status[0].url + "/wishes"
   test_type    = "HTTP"
   check_rate   = 300
   contact_group = ["Default"]
