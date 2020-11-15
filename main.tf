@@ -10,6 +10,14 @@ resource "google_cloud_run_service" "default" {
           name = "LOGZ_TOKEN"
           value = var.logz_token
         }
+        env {
+          name = "DB_USERNAME"
+          value = var.db_username
+        }
+        env {
+          name = "DB_PASSWORD"
+          value = var.db_password
+        }
       }
     }
   }
