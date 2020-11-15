@@ -1,4 +1,4 @@
-provider "terraform-providers/statuscake" {
+provider "statuscake" {
   username = var.statuscake_username
 }
 
