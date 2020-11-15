@@ -1,4 +1,4 @@
-resource "google_cloud_run_service" "default" {
+resource "google_cloud_run_service" "pgrservice" {
   name     = "pgr-service"
   location = "us-central1"
 
