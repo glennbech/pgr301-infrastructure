@@ -1,4 +1,4 @@
-resource "google_cloud_run_service" "pgrservice" {
+resource "google_cloud_run_service" "default" {
   name     = "pgr-service"
   location = "us-central1"
 
@@ -33,9 +33,9 @@ data "google_iam_policy" "noauth" {
 }
 
 resource "google_cloud_run_service_iam_policy" "noauth" {
-  location    = google_cloud_run_service.pgrservice.location
-  project     = google_cloud_run_service.pgrservice.project
-  service     = google_cloud_run_service.pgrservice.name
+  location    = google_cloud_run_service.default.location
+  project     = google_cloud_run_service.default.project
+  service     = google_cloud_run_service.default.name
 
   policy_data = data.google_iam_policy.noauth.policy_data
 }
