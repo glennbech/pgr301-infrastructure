@@ -13,6 +13,7 @@ before_install:
   - gcloud auth activate-service-account --key-file=gkey.json
   - gcloud config set project "${GCP_PROJECT_ID}"
   - export GOOGLE_APPLICATION_CREDENTIALS=./gkey.json
+  - export STATUSCAKE_APIKEY=$(gcloud secrets versions access latest --secret=statuscake_apikey)
   - wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
   - unzip terraform_"$tf_version"_linux_amd64.zip
   - sudo mv terraform /usr/local/bin/
@@ -25,7 +26,6 @@ script:
     export TF_VAR_db_username=$(gcloud secrets versions access latest --secret=db_username)
     export TF_VAR_db_password=$(gcloud secrets versions access latest --secret=db_password)
     export TF_VAR_statuscake_username=$(gcloud secrets versions access latest --secret=statuscake_username)
-    export STATUSCAKE_APIKEY=$(gcloud secrets versions access latest --secret=statuscake_apikey)
     terraform init
     terraform plan
     terraform apply --auto-approve
