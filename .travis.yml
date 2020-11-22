@@ -29,7 +29,9 @@ script:
     export TF_VAR_db_password=$(gcloud secrets versions access latest --secret=db_password)
     export TF_VAR_statuscake_username=$(gcloud secrets versions access latest --secret=statuscake_username)
     export TF_VAR_statuscake_apikey=$(gcloud secrets versions access latest --secret=statuscake_apikey)
-    export TF_VAR_
+    export TF_VAR_auth0_client_id=$(gcloud secrets versions access latest --secret=auth0_client_id)
+    export TF_VAR_auth0_client_secret=$(gcloud secrets versions access latest --secret=uth0_client_secret)
+    export TF_VAR_auth0_domain=$(gcloud secrets versions access latest --secret=uth0_domain)
     terraform init
     terraform plan
     terraform apply --auto-approve
