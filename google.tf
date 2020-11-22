@@ -1,3 +1,10 @@
+provider "google" {
+  credentials = file("gkey.json")
+  project     = "pgr301-exam-295320"
+  region      = "us-central1"
+  zone        = "us-central1-c"
+}
+
 resource "google_cloud_run_service" "default" {
   name     = "pgr-service"
   location = "us-central1"
@@ -18,10 +25,16 @@ resource "google_cloud_run_service" "default" {
           name = "DB_PASSWORD"
           value = var.db_password
         }
+        env {
+          name = "REACT_APP_AUTH0_DOMAIN"
+          value = var.auth0_domain
+        }
+
       }
     }
   }
 }
+
 
 data "google_iam_policy" "noauth" {
   binding {
