@@ -26,8 +26,12 @@ resource "google_cloud_run_service" "default" {
           value = var.db_password
         }
         env {
-          name = "REACT_APP_AUTH0_DOMAIN"
-          value = var.auth0_domain
+          name = "auth0_issuer"
+          value = format("https://%s/",var.auth0_domain)
+        }
+        env {
+          name="auth0_audience"
+          value = var.api_identifier
         }
 
       }

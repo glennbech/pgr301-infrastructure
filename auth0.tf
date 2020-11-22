@@ -7,7 +7,7 @@ provider "auth0" {
 
 resource "auth0_resource_server" "auth0_cloud_run_api" {
   name        = "Cloud run API"
-  identifier  = google_cloud_run_service.default.status[0].url
+  identifier  = var.api_identifier
   signing_alg = "RS256"
 
   scopes {
