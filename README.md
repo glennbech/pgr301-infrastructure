@@ -21,12 +21,12 @@ Del av eksamen i PGR301 - DevOps i skyen og demonstrere bruk av Terraform, Docke
 
 ## Auth0
 
-Bruker Auth0 som ekstra terraform provider, slik får man tilgang til nødvendige variabler
+Bruker Auth0 som ekstra terraform provider, slik får man tilgang til nødvendige variabler:
 
 1. Registrer deg på auth0
-2. Lag en ny applicaiton `terraform provider` av typen **Machine to Machine application** legg til "Auth0 Management API" som "authorized api" med alle tilganger.
-3. Erstatt auth0_provider_domain, auth0_provider_client_id og auth0_provider_client_secret med verdiene fra den nye auth0 applikasjonen
+2. Lag en ny applicaiton `terraform provider` av typen **Machine to Machine application** legg til "**Auth0 Management API**" som "**authorized api**" med alle tilganger.
+3. Erstatt auth0_provider_domain, auth0_provider_client_id og auth0_provider_client_secret verdiene i .travis.yml med verdiene fra den nye auth0 applikasjonen
 
-Apiet krever autentisering ved hjelp av Auth0. For å teste applikasjonen kan man få jwt token ved å logge inn på Auth0 gå inn på "APIs" → "Cloud run API" (laget ved hjelp av terraform) → "Test"-fanen. Tokenen må legges ved i "Authorization" headeren og prefixes med "Bearer".
+Apiet krever autentisering ved hjelp av Auth0. For å teste applikasjonen kan man få jwt token ved å logge inn på Auth0 gå inn på "APIs" > "Cloud run API" (laget ved hjelp av terraform) > "Test"-fanen. Tokenen må legges ved i "Authorization" headeren og prefixes med "Bearer".
 
 Tanken er at man feks skal ha en separat single-page-app som lar brukeren logge inn og hente tokenen fra auth0, for så å bruke den til å autorisere kallene mot APIet.
