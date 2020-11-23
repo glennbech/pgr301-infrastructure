@@ -9,6 +9,3 @@ variable "auth0_provider_domain" {}
 variable "api_identifier" {
   default = "cloudrun_api"
 }
-variable "auth_client_id" {
-  default = "CGAZByfIJ1TdsGynxF9MvEUGKllsB7Bg"
-}

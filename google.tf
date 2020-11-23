@@ -34,19 +34,6 @@ resource "google_cloud_run_service" "default" {
           value = var.api_identifier
         }
 
-        env {
-          name="REACT_APP_AUTH0_DOMAIN"
-          value = var.auth0_provider_domain
-        }
-        env {
-          name="REACT_APP_AUTH0_AUDIENCE"
-          value = var.api_identifier
-        }
-        env {
-          name = "REACT_APP_AUTH0_CLIENT_ID"
-          value = var.auth_client_id
-        }
-
       }
     }
   }
