@@ -1,38 +1,36 @@
 env:
   global:
-    - GCP_PROJECT_ID=pgr301-exam-295320
-    - tf_version=0.13.5
-    - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+  - GCP_PROJECT_ID=pgr301-exam-295320
+  - tf_version=0.13.5
+  - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+  - secure: WYfoM+2Xjb8Hs+O62ZvhWe5MDadB3N8wJYiQNV71BH4sJ3illnfY04oWD+35x/2Z/A7QQwUNWPurrj0vW+GEj1+SdX5x6bQsHyNb5m+na8qLDzIuownEdEXmMX0I5ybGO/Ta75PNNXm9OFPt8wFWd+Olxlm5QD2iDkFyZJEE3asrAEzgwMItnbnHVWd61KqalJHbzDJRGg7B/0qoWHvuOeBfid9uCsbwFInC48wLlRtpNQqzp8PqLVG2aEIhyGEt6XYAnatefXXvU/0+GySxBakPWC8ewjhzl+KUXAd0+L8cO6nNwUMShLdzXSmlqQYlOOmtdOegkCd2E/00/xhcZVKasMRL1gnY6TPzZtBbL5csr/A2bsvBu35868+zHCGnnBIvFeKW7bac3h1Dh3aTOpVRWPN8lLWl7QTo8bs/M3ttq+iQmBjM2WBtpVWjUcKJY/1FU7gZoua0J+KA2HoNTrvSSaM09M3rZ/sPjLct9O8pP/VUed6aFvSNeRK/YSlZEzfpb0/WSM0hR4uMBt+OI57MFmvv/sUqHodjgGgnJ4ntCdDqyKkFjYdEzIC3+3AXuDVHXWoIeNg+OZ6HY4P6Dc00KGDEpXIIizJmIv2VpWxBhTlJfz3bJhtvMZWQ0UACP49naZVOHMB/4ip8xk/j7hdV07R7BgITFA/DENu9mps=
+  - secure: EqJy+NAqMX/ExcEYumtQKBPGTzpmLFhUaqItNyapp6euLC78X9/trsUCm9pdb8StEpmVicnZy0lRVQxsTcFo55kIkAiwjeBWUY14pD6PLEKl0WfkvrsirZTih2lc+BfKdURhSHUZGLHl9W37A00eHLy8vnb7JZSIvhUJ9YVfPek2Q+shagk2CBXvIprZV6mi1WeO2OlFH3w4TPM2QhdTMMIp2oeRadRLR8zvrDH1J9IjiFgN99TOwK62dOkb0+N2fF+nv4+6lIsL0F8EN0x/ont7f8wRoFhCGa/OCsUmo534ud6DZmzWAWAjqKkV6aueNFYxQjGtUyZHLr0KZJO166mVr3jl2ZOcNjr6RyTDEdjnFn1QiqVirK4Nb3PeSjMctBdPfuUYt1ABl3JEPtVDvk5NcYGNr6aeryBXOlRFFx/nxsNzmWGXzp48veKTCN/CiC4khWQWJmeK1NXYeGdQJj0Fasc/QWyxz+3fe4XuejxapgoO7DVQmB2YbRc8YVtX3W7pVL7kmDUsELLMhnICVOKOYomJIp68TUBEdtDT4VlfXB0Fmzh3ymdUEybNPjBK25ZwuI7qB2r/yTIvFLDzF6PqUi8bZJSsWVh8ue+x+ejgshWfFvvh0AYlKUILnwW0iCrfi+5kauPM7K48J4Xy+a568o4VpUp4+9uaJDbo6Mg=
+  - secure: dQd0PwcGVp9cBykkVHbcHFFA0Tfin6pp5+MzKxMPTuxAVVzv5+uLqGiqr0x8clOQ0jVNC/MgUeD6nxUcWzOnYtiKC9xGFquc379AsC82YtSgXUC3WbBl3wQ/fL1PEnTlqiJ2A9DwCZenQPMuEhORNmTwuYrhri+49mJseJsFdI1dDLqh3TlSOBxIZ1dGxDoBW9iI2x14IwW0pRxVQrVyAsgNp7ryzme0KaV6M9UpYECqC4HkNO0LWmhKOFGAw5gWubb+LZcMpgV1Acggo2Uab6l7SxBLQUimbCdFtbwCqsUaFFB+Ld4JXA2rOKztDN6ZdRj/ePd5VpZQL4skXBWk4srdmK3mOCislQhaFPoPCXJPOeH0Nz37Jen7kSsvsa1bh7Yf9M7c/D59SIdvZZlX9kqA2ug+yfpfL9iHuR3lEABTbcmI/ceex46ES0YQ8WQ6lP31y99jwYFvjNR+moANkciDkZhZYN9af4tZESeomGQq+8QGSmRnu6kj/97GaZrIm8102G6KNwnUzFiXINt3p2f4IA+OU/XhgXeecQzjEjZ79lOCJJ3PY2xk6Qebh8tTIsTclHx66VaE6q0xwgsi8mSwP7wEmevsTlVvNqHBHABdQ2d6owgjoZ38EboCeb0aaInL/BT9+49s9ylT5jXEYma8HZetR+8s4w8ylNk60nA=
+  - secure: e3oOBvk5fBp0i5sdYVlMYK/9uh3FeaPQVEVF/lAusUSV3A0cKcet4Jji6frv32SUmxjEZyo4bQlT7RLXN/e5wcIt5Npqn+6nSyFO1ToY98l9WMWvzaZD5rf/L3pf/4UZXUOZpgGqeKV0rrSsGys0HaXzVP+zRtG6vzPRpAOxEyJ2mkhMyv5hwvp9jfSbOLhxSxtm5CiHNXALdk8/paI4masXDzbhoP8yscGv8481I0nRvC8uAqbxsYLiR2aogQZP/XmOZBaVb+wBYsHjkduu/vz1+vrV8Hk6sD6YWaDoPChCZyT0u42Le5kYxM0M87VruY3lzfxkFSjQiZpDK/qsvt8qb1NLu7NVSltjdFdumJjzZT5Jmp8U4fA38SM5xMU1k+Ru1E5M+zRe4PBBPWBLJisQpsZYghvpp/IQn9og6SmQ2Yhw5+ehOjkLTeM6LcV2qqku4jGaDcoF1vi7kU6jR94WJo7XQyTMB8b7TcFp+H1BbeJVz9DmeofmYyDN7E5DvWPh5M5Ld4GYN2ERkYLDPTFle9c9qeiFI8AN37o755691rHWZnZ99ceIatjgq5BPUxgGf7vksQqL5ELfMDIyX00BintfgAULTVP3fQYAOgL34i4pcdo/CAJ8Ajy5BO58ydvUQXvlrvWt9L68Askt4IHK0YUMFj/qxU4wtZL+O0s=
+  - secure: T9hWCx2AJFITvQfYYx6kMS4A801LQRvSSCFDJz8NYEti4zfQc5XK1/piZ8mvXd8ZG8KVbvlrEjzqS/DVgayqtaFWPyh37D10VaWixOUo1UdCyLSIGRC87Uq/d5vmCrnSerXldZWarFgx4AIt4AuWyQ02hsDMYkv5jS8ASWig7Fm2tSn1NwM3b/+UnXwQwPJu+SBBsGao0UkGHS5VYBZos1LdzBeANKSJTBv4YrzK/U/V58OIVX0NTVCGoY9DEGNoq3V0kCSIj7ZAZYT/cotm9Rv5SPwGoi1txeU41YT7+8911Mu+D77si0OWAxFoKVJ1wzNKzktxej9ziQgid8cVVPQQzZKWgH+C1gsKM82z5Sws0eQzHZmGRu39l3oZc2yFSoRuio5YazW6gAUMxapcUrLvFAkLOZ2XLdh7eTB3Q8GC3hFnN1pJSQDxq17kU558rXj41VPjegf97PhjR9Pw66m6xURxyx3Oo6QnupeTwCbiXdej6IEZ8huNPBklhpBIArTEWyElIL3wjzeG7jZQKmy4pchyVeVabYT0V0SLSImJzEVw+B/ZrY8VAvJbF4CamYYod33eZfotqdDTbgr7Vl1HI1ayMd/B8N9QIzIFTj9qvj8dV53KH9sWv8NCmz2BRS5k928dYivvSu/H0pKL4OMVsNMrVqa7ThVoMm/FZ+M=
+  - secure: YOHxH9IGWpZ+a209PO+VuneD7vssr0RWk/sgJvE3h2ROAkr3LA7jc+rWKsTCbP/O1JhDTj1CEpwNl+DdH47yI00tlQi7U/vdm9JfaceY4jZMShRm0ut8H3PlNgZUj5U7DEBEdyVModhQXN1QWPL8PWA7FrlM40h59HsYwzQO/mIfoEsQcRPH2ZQ5DVtSaPo8uUFzN00FF+oZF/fZO5CRxT5R2r9mZCBhQ93F1zV4Ub47WIl+Vbv2jC76BozSe4dSwezjAXGmOtekSVQ1cVs9mqv/BYiQAUWXJSnFlC0+5uIb5pkcydpYEncGhPMCQ1MFrPPgoNtkTk1tQx99GObDo7WBwABL+1PxG2oJe6ErToXQNuIBUXKjpxFl0FuxX7LRaGz1pc+9Qo2gvg5DTf2y2WYQI0FLINm2Q/AobdvY4M3r43MKu0+qSQuleI4H6iR3iBhECUi1AkQFUh668nXTp8X67a76VNwK19LjeUtt/y8nZL0aQRrWQqmIsMjKcR5bKcK7jQ3M3j0ArocrRE3rmZZ64wirZkgTt6tz7/9GpdguGWkJgX90Adp1Z+OsaJQ+Q9EXA6/0wI0wkgYuP6QW7bjMsNiO6wYPWswaREX1Gr2s0tlh+SMfAz7KAl6MBUfBnzQ9YFaeQZ86EOtE3YiaLp2QNQRtBgNSVWum2l16oDY=
+  - secure: h5wmhnFyHhKio36QLw1/CVRXEkz89k2b3JQJe2VDLbs5JAEmqfPee78/NIbhbOQiyuHe+SKN01waBAjG1SpoLS0PbVZ9HrSoOZmh7Bx4BxAB1VtpwB+mfjbEqdPAOzu86cfXJeilu7IGCYAVPTMczdj39MLpP9uUogm/1DPocs1Qa12BrsyXpZYbOHThYGTmANh/HHiFGJMKTHULIM3NA8SDikQX8Aexnw9eC/YMTCrfADRLyTXDU92BNJ4CCldgBHwdetOVuxZEMOJSoLxH+Nrjsld5RTZTGHMOAXo9ayQ2gbVdmivu3LchkRwfYDVpqL3FIx3orLLqbRFKPMn3aO7GoVz6nWBjqz2omI2g9vFvsZoC9YfyVoYnxGZgqgPDGcJlrjnWC6rUP+6K74ztoRzvrfFJgJAxl29IcXQVKi6LcOUj+QfOCIim8zH5D5JpMkMkls/GJkj7pr6aMrYgBVk3Svt4NUl1ZgnHMHGlimE32UuCawf3TnF77JiuU5sdYh7nS69F1/dP0nHbNXtFJDBa10QrlQK0JvHyInGUzS7/z/GLueglg7BkeIpZIeIZ17zXuJHY80wIQKb1EmTDMKFNsSej0LRxw2jfRTo1mwi1hmTN0BZfOlU1M3hXv0W6RzHFgN/NAinvrHF84vo8mci0SuKPdmpElPFSq1HWcq4=
+  - secure: osOoAXREkTPRB8TFaEBjUGli0GqvjYOvyE2AcS6fXbUYTwgrFk6TqgYjZAu1QDUWNn6nI6WxSHijuggJ/gneeRqyxnFoCW/bwWudicRaVtGjUjwhSDomry0PhjfjBDw1+Z0MKznHvzq8NmnbmTcA3RDuMz5aWufGQK04KMSmRg6bABrHsNp4vBAyBX6sg6wd5l+YkEBCYeSzX6goLei971yMkThDtc+anafMS4yKSJLRRjJI0z9bkjak8sdi0d1ulFmaXs9sQ4NMRo14Ha0FX9tCUohO0R/VuqtckdeItEr7QwSyDgEIgfh4HAwBXMzBeymd2zHU++fDtLlxvSxrdwJQbrR/8SI0wq+WELFulwvDaYsy0m2tEnWV67KceWOGyhl7zmGPM+P+dskXmzkC9c4Oz/7nj3oBjcbwMLDsKKMkpIN3HquFJS8dbfj9h/dZNuQJhTZyxcQZq3TueD6bYIjS2mZ+TmVm2vmdKCXupSQkNsUZXrGg0/3D/t3lOqePioAUdYk4iE/VsSmu9ZzdxhWIMt43RNJ+jjSWJzGmyCgRFvxGrX/p7Pke7/kIz0zghlknyiBN9MzpUetFjdwD0kM+RGhj1Gd8bk4i1cQu2OE6ZR5nDszQQQltUM3OSZUnU1Y7ZE/1L31cwkiuMswQgwZDyMFy8v8Wd1DeT5v2M6U=
 branches:
   only:
-    - master
+  - master
 before_install:
-  - openssl aes-256-cbc -K $encrypted_12c8071d2874_key -iv $encrypted_12c8071d2874_iv -in gkey.json.enc -out gkey.json -d
-  - curl https://sdk.cloud.google.com | bash > /dev/null
-  - source "$HOME/google-cloud-sdk/path.bash.inc"
-  - gcloud auth activate-service-account --key-file=gkey.json
-  - gcloud config set project "${GCP_PROJECT_ID}"
-  - export GOOGLE_APPLICATION_CREDENTIALS=./gkey.json
-  - export AUTH0_DOMAIN=$(gcloud secrets versions access latest --secret=auth0_domain)
-  - export AUTH0_CLIENT_ID=$(gcloud secrets versions access latest --secret=auth0_client_id)
-  - export AUTH0_CLIENT_SECRET=$(gcloud secrets versions access latest --secret=auth0_client_secret)
-  - wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
-  - unzip terraform_"$tf_version"_linux_amd64.zip
-  - sudo mv terraform /usr/local/bin/
-  - rm terraform_"$tf_version"_linux_amd64.zip
+- openssl aes-256-cbc -K $encrypted_12c8071d2874_key -iv $encrypted_12c8071d2874_iv
+  -in gkey.json.enc -out gkey.json -d
+- curl https://sdk.cloud.google.com | bash > /dev/null
+- source "$HOME/google-cloud-sdk/path.bash.inc"
+- gcloud auth activate-service-account --key-file=gkey.json
+- gcloud config set project "${GCP_PROJECT_ID}"
+- export GOOGLE_APPLICATION_CREDENTIALS=./gkey.json
+- wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
+- unzip terraform_"$tf_version"_linux_amd64.zip
+- sudo mv terraform /usr/local/bin/
+- rm terraform_"$tf_version"_linux_amd64.zip
 install: true
 script:
-  - |-
-    set -ex;
-    export TF_VAR_logz_token=$(gcloud secrets versions access latest --secret=logz_token)
-    export TF_VAR_db_username=$(gcloud secrets versions access latest --secret=db_username)
-    export TF_VAR_db_password=$(gcloud secrets versions access latest --secret=db_password)
-    export TF_VAR_statuscake_username=$(gcloud secrets versions access latest --secret=statuscake_username)
-    export TF_VAR_statuscake_apikey=$(gcloud secrets versions access latest --secret=statuscake_apikey)
-    export TF_VAR_auth0_provider_client_id=$(gcloud secrets versions access latest --secret=auth0_provider_client_id)
-    export TF_VAR_auth0_provider_client_secret=$(gcloud secrets versions access latest --secret=auth0_provider_client_secret)
-    export TF_VAR_auth0_provider_domain=$(gcloud secrets versions access latest --secret=auth0_provider_domain)
-    terraform init
-    terraform plan
-    terraform apply --auto-approve
-    terraform output
+- |-
+  set -ex;
+  terraform init
+  terraform plan
+  terraform apply --auto-approve
+  terraform output
