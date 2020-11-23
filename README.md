@@ -9,7 +9,8 @@ Del av eksamen i PGR301 - DevOps i skyen og demonstrere bruk av Terraform, Docke
 3. Opprett en service account for terraform og gi den rollene: "cloud run admin", "Container registry admin", "Servie usage admin" og "Google storage admin"
 4. Last ned nøkkel for service brukeren på json format og legg den i root mappen til prosjektet med navnet "gkey.json". Krypter filen med `travis encrypt-file --pro gkey.json --add`
 5. Lag en bucket i Google cloud platform for terraform state med navnet "tf-state-exam" (ved annet navn må state.tf filen endres
-6. Fjern eksisterende krypterte vderier, og krypter følgende verdier:
+6. Erstatt docker image i google,tf med ønsket image
+7. Fjern eksisterende krypterte vderier, og krypter følgende verdier:
     - `travis encrypt --pro TF_VAR_logz_token=<logz.io token> --add`
     - `travis encrypt --pro TF_VAR_db_username=<h2 username> --add`
     - `travis encrypt --pro TF_VAR_db_username=<h2 password> --add`
@@ -18,6 +19,7 @@ Del av eksamen i PGR301 - DevOps i skyen og demonstrere bruk av Terraform, Docke
     - `travis encrypt --pro TF_VAR_auth0_provider_client_id=<auth0 provider client id> --add`
     - `travis encrypt --pro TF_VAR_auth0_provider_client_secret=<auth0 provider client secret> --add`
     - `travis encrypt --pro TF_VAR_auth0_provider_domain=<auth0 domain> --add`
+8. Push til master branch vil nå sette i gang terraform og opprettelse av infrastrukturdelen av prosjektet. 
 
 ## Auth0
 
