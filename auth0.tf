@@ -1,8 +1,8 @@
 provider "auth0" {
   debug = true
-  client_id = var.auth0_client_id
-  client_secret = var.auth0_client_secret
-  domain = var.auth0_domain
+  client_id = var.auth0_provider_client_id
+  client_secret = var.auth0_provider_client_secret
+  domain = var.auth0_provider_domain
 }
 
 resource "auth0_resource_server" "auth0_cloud_run_api" {
@@ -44,5 +44,5 @@ resource "auth0_connection" "terraform-spa-user-db" {
     password_policy        = "good"
     brute_force_protection = true
   }
-  enabled_clients = [auth0_client.spa_auth.id, var.auth0_client_id]
+  enabled_clients = [auth0_client.spa_auth.id, var.auth0_provider_client_id]
 }
